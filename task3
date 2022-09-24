@@ -1,0 +1,26 @@
+//Mosklaveskyi Mykola
+//task 3
+
+#include <iostream>
+
+int main()
+{
+    int days, days1, weeks;
+
+    do {
+        printf("Enter days: ");
+        scanf_s("%d", &days);
+
+        if (days > 0) {
+
+            weeks = days / 7;
+            days1 = days % 7;
+            
+            printf("%d days are %d weeks and %d days\n", days, weeks, days1);
+        }
+        else {
+            printf("Value less or equal to 0\n");
+        }
+    } while (days > 0);
+}
+
