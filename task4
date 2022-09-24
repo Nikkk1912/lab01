@@ -1,0 +1,31 @@
+//Moskalevskyi Mykola
+//task4
+
+#include <iostream>
+
+int main()
+{
+    double cm, in, feet, in1;
+    int feet1;
+
+    do {
+
+        printf("Enter centimeters: ");
+        scanf_s("%lf", &cm);
+
+        if (cm >= 0) {
+
+            feet = cm / 30.48;
+            feet1 = feet;
+            in1 = feet - feet1;
+            in = in1 * 12;
+
+            printf("%lf cm = %d feet, %.2lf inch\n", cm, feet1, in);
+        }
+        else {
+            printf("Value less than 0\n");
+        }
+
+    } while (cm >= 0);
+}
+
