@@ -1,0 +1,30 @@
+//Moskalevskyi Mykola
+//task01
+
+#include <iostream>
+
+int main()
+{
+    const int t = 60;
+    int x;
+    int hours;
+    int minute;
+
+    do {
+        printf("Enter your time it minutes:\n");
+        scanf_s("%d", &x);
+
+        if (x > 0) {
+
+            hours = x / t;
+            minute = x % t;
+            
+
+            printf("It will be %d hours and %d minutes\n", hours, minute);
+        }
+        else {
+            printf("Value less or equal to 0\n");
+        }
+    } while (x > 0);
+
+}
