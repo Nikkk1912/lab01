@@ -1,20 +1,21 @@
 //Moskalevskyi Mykola
 //task2
 
+
 #include <iostream>
 
 int main()
 {
-    float x;
-    float y;
+    int x;
+    int y;
 
     printf("Enter your number: ");
-    scanf_s("%f", &x);
+    scanf_s("%d", &x);
 
     y = x + 10;
 
     while (x <= y) {
-        printf("%0.2f\n", x);
+        printf("%d\n", x);
         x = x + 1;
 
     }
