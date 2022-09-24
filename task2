@@ -1,0 +1,22 @@
+//Moskalevskyi Mykola
+//task2
+
+#include <iostream>
+
+int main()
+{
+    float x;
+    float y;
+
+    printf("Enter your number: ");
+    scanf_s("%f", &x);
+
+    y = x + 10;
+
+    while (x <= y) {
+        printf("%0.2f\n", x);
+        x = x + 1;
+
+    }
+    return 0;
+}
