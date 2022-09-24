@@ -13,7 +13,7 @@ int main()
         printf("Enter centimeters: ");
         scanf_s("%lf", &cm);
 
-        if (cm >= 0) {
+        if (cm > 0) {
 
             feet = cm / 30.48;
             feet1 = feet;
@@ -23,9 +23,8 @@ int main()
             printf("%lf cm = %d feet, %.2lf inch\n", cm, feet1, in);
         }
         else {
-            printf("Value less than 0\n");
+            printf("Value less or equal to 0\n");
         }
 
-    } while (cm >= 0);
+    } while (cm > 0);
 }
-
