@@ -1,12 +1,13 @@
 
 
+
 #include <iostream>
 
 int cube(double a)
 {
 	double result;
 	result = a * a * a;
-	printf("%le cubed is %le", a, result);
+	printf("%lf cubed is %lf", a, result);
 	return 0;
 }
 
@@ -14,8 +15,7 @@ int main()
 {
 	double number;
 	printf("Enter your value: ");
-	scanf_s("%le", &number);
+	scanf_s("%lf", &number);
 	cube(number);
 
 }
-
