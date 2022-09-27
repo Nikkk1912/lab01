@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main()
+{
+	int first, second, result;
+
+	puts("This program computes moduli.");
+	printf("Enter second operant: ");
+	scanf_s("%d", &second);
+	printf("Now enter first operant: ");
+	scanf_s("%d", &first);
+
+
+	
+	while (first > 0) {
+		
+		
+		
+
+		result = first % second;
+
+		printf("%d %% %d is %d\n", first, second, result);
+		printf("Enter next number to be the first operant: ");
+		scanf_s("%d", &first);
+	} 
+}
