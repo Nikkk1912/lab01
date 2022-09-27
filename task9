@@ -1,31 +1,31 @@
 #include <iostream>
 
-int Temperatures(double F, double C, double K)
+int Temperatures(double F)
 {
-    const double fahr = 5.0 / 9.0, fahr1 = 32, Cels = 273.16;
-    
-    C = fahr * (F - fahr1);
-    K = C - Cels;
+    const double f = 5.0 / 9.0, f1 = 32, с = 273.16;
+    double C, K;
 
-    printf("%.2le is %.2le is %.2le", F, C, K);
+    C = f * (F - f1);
+    K = C + с;
+
+    printf("||F = %.2lf | C = %.2lf | K = %.2lf ||\n", F, C, K);
     return 0;
 }
 
 
 int main()
 {
-    int x = scanf();
-    double F, C, K;
+    double F;
 
+    printf("Enter temperature in F: ");
+   
+    while (scanf_s("%lf", &F) == 1) {
+        
+        Temperatures(F);
 
-    if (x == 1) {
         printf("Enter temperature in F: ");
-        scanf_s("%le", &F);
-
-        Temperatures(F, C, K);
-        printf("Temperatures");
-
-    }
+        
+    } 
 
 
 }
