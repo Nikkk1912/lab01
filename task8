@@ -10,13 +10,9 @@ int main()
 	printf("Now enter first operant: ");
 	scanf_s("%d", &first);
 
-
 	
 	while (first > 0) {
 		
-		
-		
-
 		result = first % second;
 
 		printf("%d %% %d is %d\n", first, second, result);
